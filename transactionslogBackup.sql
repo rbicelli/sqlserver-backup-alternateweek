@@ -1,7 +1,7 @@
 -- SQL SERVER BACKUP LOG WITH ODD/EVEN WEEK ROTATION
 -- (c) 2016-2020 Riccardo Bicelli <r.bicelli@gmail.com>
 -- VERSION 1.0
--- REQUIRED VARIABLES
+
 DECLARE 
       @EvenOdd INT,
       @BackupSet VARCHAR(20),

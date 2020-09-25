@@ -11,7 +11,7 @@ The scripts are responsible to take SQL Server backups, alternating backup sets 
 	[Full]  --->  [Diff]  -->  [Diff]   -->   [Diff]    -->   [Diff]   -->  [Diff]  -->   [Diff]
   (Flip Set)
 ```
-The script creates one .bak file per database per set. With Databases in full recovery model it creates also a .trn file per database per set. 
+The script creates one .bak file per database per set. With Databases in Full Recovery Model it creates also a .trn file per database per set. 
 
 ## Compatibility
 Any SQL Server Version (Tested from SQL Server 2008 R2 to SQL Server 2017).
@@ -20,7 +20,7 @@ SQL Server Express is also compatible.
 ## Usage
 Grab the SQL scripts.
 
-Schedule as this, with task Scheduler or SQL Server Agent:
+Schedule as this, with Windows Task Scheduler or SQL Server Agent:
 
 - Full backup the first day of week (Sunday)
 - At least one differential backup other days, excluding the first day of week
